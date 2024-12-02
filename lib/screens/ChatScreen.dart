@@ -17,7 +17,7 @@ class _ChatscreenState extends State<Chatscreen> {
     return Scaffold(
       backgroundColor: AppColors.bgColor,
       appBar: AppBar(
-        title: Text("Apna AI",style: TextStyle(fontFamily: 'mainfont'),),
+        title: const Text("Apna AI",style: TextStyle(fontFamily: 'mainfont'),),
       ),
       body: Column(
         children: [
@@ -30,13 +30,13 @@ class _ChatscreenState extends State<Chatscreen> {
             decoration: InputDecoration(
               fillColor: AppColors.secondaryColor,
               filled: true,
-              prefixIcon: Icon(Icons.mic),
+              prefixIcon: const Icon(Icons.mic),
               suffixIcon: InkWell(
                 onTap: (){
                   ApiHelper().generateAIMsg(url: urls.CHAT_COMPLETION_API, prompt: promptcontroller.text);
                   promptcontroller.clear();
                 },
-                  child: Icon(Icons.send)),
+                  child: const Icon(Icons.send)),
               hintText: "Write a Question..",
               hintStyle: mTextStyle16(mColor: AppColors.mGreyColor),
               border: OutlineInputBorder(
