@@ -1,10 +1,30 @@
-# chatbot_app
+# APNA AI - Flutter-based AI Chatbot
 
-A new Flutter project.
+APNA AI is a conversational AI chatbot built using Flutter and powered by OpenAI's GPT models. The app is designed to provide a seamless and interactive experience for users, offering intelligent responses to a wide range of queries across different domains like learning, productivity, and general assistance.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **AI-Powered Conversations**: Utilizes OpenAI's GPT models for natural language processing and text generation to provide human-like responses.
+- **Cross-Platform**: Fully responsive and compatible with both Android and iOS platforms.
+- **Interactive Interface**: Engaging, easy-to-use, and intuitive user interface designed for a smooth conversational experience.
+- **Real-Time Query Handling**: Handles user queries and generates context-aware responses in real time.
+- **User-Centric Design**: Focused on providing solutions for learning, productivity, and general assistance use cases.
+
+## Technologies Used
+
+- **Flutter**: Frontend framework for building a cross-platform mobile application.
+- **OpenAI API**: Powers the AI-driven natural language processing and text generation capabilities.
+- **Dart**: Programming language used for Flutter app development.
+
+## Installation
+
+To run the app locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Raikant59/Apna-AI.git
+   ```
+
 
 A few resources to get you started if this is your first Flutter project:
 
