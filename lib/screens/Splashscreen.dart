@@ -1,7 +1,9 @@
 import 'dart:async';
 
+import 'package:chatbot_app/provider/chat_provider.dart';
 import 'package:chatbot_app/screens/ChatScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -15,10 +17,17 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 2), (){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Chatscreen()));
-    });
 
+    Timer(Duration(seconds: 2), () {
+      Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ChangeNotifierProvider(
+              create: (context) => ChatProvider(),
+              child: ChatScreen(),
+            ),
+          ));
+    });
   }
 
 
